@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.queryword.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入查询内容"
+        android:id="@+id/et"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et"
+        android:id="@+id/tv"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="查询"
+        android:layout_below="@+id/tv"
+        android:onClick="query"/>
+</RelativeLayout>
